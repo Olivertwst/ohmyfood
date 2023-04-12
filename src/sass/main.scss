@@ -1,3 +1,6 @@
+@import 'vendors/normalize';
+@import 'base/base';
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -9,7 +12,7 @@ html {
     height: 100px;
 }
 
-.select {
+.rest {
     border-radius: 15px;
     margin: 3%;
     padding-left: 25px;
@@ -18,24 +21,40 @@ html {
     padding-bottom: 20px;
 }
 
-.select h2 {
+.rest h2 {
     padding-top: 5px;
     padding-left: 33px;
+}
+
+.rest a {
+    text-decoration: none;
+    color: black;
+}
+
+.restaurants-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .restaurants-card {
     border-radius: 15px;
     padding: 5px;
     background-color: white;
-    height: 80px;
-    width: 80px;
+    height: 180px;
+    width: 180px;
     color: black;
     text-decoration: none;
 }
 
 .restaurants-card img {
     object-fit: cover;
-    width: 80px;
+    width: 100px;
+    height: 180px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.tagline {
+    font-size: 12px;
+    padding: 0 25px 15px 25px;
 }

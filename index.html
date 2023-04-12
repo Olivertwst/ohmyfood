@@ -6,10 +6,10 @@
     <meta name="description" content="Select your meal and add it to your favorites!" />
     <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <link rel="stylesheet" href="./public/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <!-- TODO UPDATE GOOGLE FONTS ROBOTO, SHRIKHAND -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" />
     <script src="https://kit.fontawesome.com/d593006093.js" crossorigin="anonymous"></script>
 </head>
@@ -18,18 +18,20 @@
     <header>
         <img src="images/logo/ohmyfood.svg" alt="logo" class="logo">
     </header>
+    <!-- TODO restructor html to reflect the website (symantic meaning) -->
     <div class="tagline">
+        <p class="Paris,Belleville"></p>
         <h1>Book the menu you like</h1>
         <p> Discover top-of-the-art restaurants we picked for you</p>
         <form class="search-form" action="index.html" method="get"></form>
         <div class="search">
             <button class="button" type="submit"><span class="button-text">Explore our restaurants</span></button>
         </div>
-        <section id="restaurants" class="Select">
+        <section id="Restaurants" class="rest">
             <h2>Restaurants</h2>
             <div class="restaurants-card-wrap">
                 <a href="#" class="restaurants-card">
-                    <img src="/images/restaurants/the-full-platte.jpg" alt="the-full-platte">
+                    <img src="/images/restaurants/the-full-platte.jpg" alt="the-full-platte" width="350">
                     <h3>The Full Platte</h3>
                     <p>New York</p>
                     <div class="favorites">
@@ -37,7 +39,7 @@
                     </div>
                 </a>
                 <a href="#" class="restaurants-card">
-                    <img src="images/restaurants/the-enchanted-plate.jpg" alt="the-enchanted-plate">
+                    <img src="images/restaurants/the-enchanted-plate.jpg" alt="the-enchanted-plate" width="350">
                     <div>
                         <h3>The Enchanted Plate</h3>
                         <p>New York</p>
@@ -47,7 +49,7 @@
                     </div>
                 </a>
                 <a href="#" class="restaurants-card">
-                    <img src="/images/restaurants/bastille.jpg" alt="bastille">
+                    <img src="/images/restaurants/bastille.jpg" alt="bastille" width="350">
                     <div>
                         <h3>Bastille</h3>
                         <p>New York</p>
@@ -57,7 +59,7 @@
                     </div>
                 </a>
                 <a href="#" class="restaurants-card">
-                    <img src="/images/restaurants/le-gourmad.jpg" alt="le-gourmad">
+                    <img src="/images/restaurants/le-gourmad.jpg" alt="le-gourmad" width="350">
                     <div>
                         <h3>Le Gourmad</h3>
                         <p>New York</p>
