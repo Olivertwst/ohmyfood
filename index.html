@@ -9,68 +9,257 @@
     <link rel="stylesheet" href="./public/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- TODO UPDATE GOOGLE FONTS ROBOTO, SHRIKHAND -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d593006093.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header>
-        <img src="images/logo/ohmyfood.svg" alt="logo" class="logo">
-    </header>
-    <!-- TODO restructor html to reflect the website (symantic meaning) -->
-    <div class="tagline">
-        <p class="Paris,Belleville"></p>
-        <h1>Book the menu you like</h1>
-        <p> Discover top-of-the-art restaurants we picked for you</p>
-        <form class="search-form" action="index.html" method="get"></form>
-        <div class="search">
-            <button class="button" type="submit"><span class="button-text">Explore our restaurants</span></button>
+    <div class="container">
+        <header>
+            <img src="images/logo/ohmyfood.svg" alt="Logo" class="logo">
+        </header>
+        <div class="tagline">
+            <p class="Paris,Belleville"></p>
+            <h1>Book the menu you like</h1>
+            <p><i class="landmark fas fa-map-marker-alt"></i>Discover top-of-the-art restaurants we picked for you</p>
+            <a href="#">
+                <button>Explore our restaurants</button>
+            </a>
         </div>
-        <section id="Restaurants" class="rest">
-            <h2>Restaurants</h2>
-            <div class="restaurants-card-wrap">
-                <a href="#" class="restaurants-card">
-                    <img src="/images/restaurants/the-full-platte.jpg" alt="the-full-platte" width="350">
-                    <h3>The Full Platte</h3>
-                    <p>New York</p>
-                    <div class="favorites">
-                        <i class="fas fa-heart" aria-hidden="true"></i>
-                    </div>
-                </a>
-                <a href="#" class="restaurants-card">
-                    <img src="images/restaurants/the-enchanted-plate.jpg" alt="the-enchanted-plate" width="350">
-                    <div>
-                        <h3>The Enchanted Plate</h3>
-                        <p>New York</p>
-                        <div class="favorites">
-                            <i class="fas fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="restaurants-card">
-                    <img src="/images/restaurants/bastille.jpg" alt="bastille" width="350">
-                    <div>
-                        <h3>Bastille</h3>
-                        <p>New York</p>
-                        <div class="favorites">
-                            <i class="fas fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="restaurants-card">
-                    <img src="/images/restaurants/le-gourmad.jpg" alt="le-gourmad" width="350">
-                    <div>
-                        <h3>Le Gourmad</h3>
-                        <p>New York</p>
-                        <div class="favorites">
-                            <i class="fas fa-heart" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </a>
+        </form>
+        <div class="filters">
+            <div class="filter-heading">
+                <h2>How it works</h2>
             </div>
-        </section>
+            <div class="btn-wrapper">
+                <button class="filter filter--small" type="button">
+                    <i class="icon fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                    <span>Choose a restaurant</span>
+                </button>
+                <button class="filter filter--small" type="button">
+                    <i class="icon fa-solid fa-child-reaching" aria-hidden="true">
+                    </i>
+                    <span>Create your menu</span>
+                </button>
+                <button class="filter filter--small" type="button">
+                    <i class="icon fas fa-heart" aria-hidden="true"></i>
+                    <span>Go enjoy it at the restaurant</span>
+                </button>
+            </div>
+        </div>
+        <main class="section wrapper">
+            <section id="Restaurants" class="rest">
+                <h2>Restaurants</h2>
+                <div class="restaurants-card-wrap">
+                    <a href="#" class="restaurants-card">
+                        <img src="/images/bastille.jpg" alt="bastille" width="350">
+                        <h3>bastille</h3>
+                        <p>Night Starting At <b>25<i class="fa-solid fa-euro-sign"></i></b></p>
+                        <div class="ratings">
+                            <i class="blue  fas fa-star" aria-hidden="true"></i>
+                            <i class="blue  fas fa-star" aria-hidden="true"></i>
+                            <i class="blue  fas fa-star" aria-hidden="true"></i>
+                            <i class="blue  fas fa-star" aria-hidden="true"></i>
+                            <i class="grey  fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="accommadations-card">
+                        <img src="/images/hotel-du-port.jpg" alt="Hotel-du-port" width="350">
+                        <div>
+                            <h3>Hotel du port</h3>
+                            <p>Night starting at <b>52<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="accommadations-card">
+                        <img src="/images/les-mouettes-Hotel.jpg" alt="Les-mouettes-Hotel">
+                        <div>
+                            <h3>Les mouettes Hotel</h3>
+                            <p>Night starting at <b>76<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="grey  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="accommadations-card">
+                        <img src="/images/hotel-de-lamer.jpg" alt="Hotel-de-lamer">
+                        <div>
+                            <h3>Hotel de la mer</h3>
+                            <p>Night starting at <b>46<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="grey  fas fa-star" aria-hidden="true"></i>
+                                <i class="grey  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="accommadations-card">
+                        <img src="/images/auberge-la-panier.jpg" alt="Auberge-La-Panier" width="350">
+                        <div>
+                            <h3>Auberge La Panier</h3>
+                            <p>Night starting at <b>23<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="grey  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="accommadations-card">
+                        <img src="/images/hotel-chez-amina.jpg" alt="Hotel-Chez-amina" width="350">
+                        <div>
+                            <h3>Hotel Chez Amina</h3>
+                            <p>Night starting at <b>96<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div> <!-- accommadations-card-wrap End-->
+                <h3><a href="#">Show More</a></h3>
+            </section>
+            <section class="popular">
+                <div class="flex-container">
+                    <h2>Most Popular</h2>
+                    <i class="fa-solid fa-star" aria-hidden="true">
+                    </i>
+                </div>
+                <div class="popular-card-wrap">
+                    <a href="#" class="pop-card">
+                        <img src="/images/morning-sun-hotel.jpg" alt="Morning-Sun-Hotel" width="350">
+                        <div class="pop-card-caption">
+                            <h3>Morning Sun Hotel</h3>
+                            <p>Night starting at <b>128<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="pop-card">
+                        <img src="/images/au-coeur-de-l'eau-bed-and-breakfast.jpg"
+                            alt="Au-coeur-de-l'eau-Bed-and-breakfast" width="350">
+                        <div class="pop-card-caption">
+                            <h3>Au coeur de l'eau Bed and Breakfast</h3>
+                            <p>Night starting at <b>71<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="grey  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="pop-card">
+                        <img src="/images/tout-bleu-et-blanc-hotel.jpg" alt="tout-bleu-et-Blanc-Hotel" width="350">
+                        <div class="pop-card-caption">
+                            <h3>Tout bleu et Blanc Hotel</h3>
+                            <p>Night starting at <b>68<i class="fa-solid fa-euro-sign"></i></b></p>
+                            <div class="ratings">
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="blue  fas fa-star" aria-hidden="true"></i>
+                                <i class="grey  fas fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main> <!--Popular-card-wrap End-->
+        <section id="Activities" class="activ">
+            <h3><b>Activities in Marseille</b></h3>
+            <div class="activ-card-wrap">
+                <a href="#" class="activ-card large">
+                    <img src="/images/old-port.jpg" alt="Old-Port">
+                    <div class="activ-info">
+                        <h3><b>Old Port</b></h3>
+                    </div>
+                </a>
+                <div class="second">
+                    <a href="#" class="activ-card fort">
+                        <img src="/images/pomegues-fort.jpg" alt="Pomègues-Fort">
+                        <div class="activ-info">
+                            <h3><b>Pomègues Fort</b></h3>
+                        </div>
+                    </a>
+                    <a href="#" class="activ-card island">
+                        <img src="/images/frioul-island.jpg" alt="Frioul-Island">
+                        <div class="activ-info">
+                            <h3><b>Frioul Island</b></h3>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="activ-card large">
+                    <img src="/images/calanques-national-park.jpg" alt="Calanques-National-Park">
+                    <div class="activ-info">
+                        <h3><b>Calanques National Park</b></h3>
+                    </div>
+                </a>
+                <div class="fourth">
+                    <a href="#" class="activ-card notre">
+                        <img src="/images/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde">
+                        <div class="activ-info">
+                            <h3><b>Notre-Dame-de-la-Garde</b></h3>
+                        </div>
+                    </a>
+                    <a href="#" class="activ-card longchamp">
+                        <img src="/images/longchamp-park.jpg" alt="Longchamp-Park">
+                        <div class="activ-info">
+                            <h3><b>Longchamp Park</b></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section> <!--activ-card-wrap End-->
     </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-list">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">General Terms and Conditions</a></li>
+                <li><a href="#">Data and Privacy</a></li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h4>Our Accommodations</h4>
+            <ul>
+                <li><a href="#">Quality Assessment</a></li>
+                <li><a href="#">You Have A Hotel?</a></li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h4>Assistance</h4>
+            <ul>
+                <li><a href="#">Help Desk</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
