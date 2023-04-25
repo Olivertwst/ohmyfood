@@ -1,0 +1,77 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.works {
+
+    &-heading {
+        background-color: $white-color;
+    }
+
+    .btn-wraper {
+        background-color: $white-color;
+    }
+
+}
+
+.tagline {
+    font-size: 12px;
+    padding: 0 25px 15px 25px;
+}
+
+button {
+    background-color: $primary-color;
+    color: $white-color;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $white-color;
+    }
+}
+
+.explore_button .rest {
+    border-radius: 5px;
+    margin: 3%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rest h2 {
+    padding-top: 5px;
+    padding-left: 33px;
+}
+
+.rest a {
+    text-decoration: none;
+    color: black;
+}
+
+.restaurants-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurants-card {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    height: 180px;
+    width: 180px;
+    color: black;
+    text-decoration: none;
+}
+
+.restaurants-card img {
+    object-fit: cover;
+    width: 100px;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}

@@ -17,60 +17,63 @@
 </head>
 
 <body>
-
-    
-    <div class="container">
-        <header>
-            <img src="images/logo/ohmyfood.svg" alt="Logo" class="logo">
-        </header>
-        <div class="tagline">
-            <p class="Paris,Belleville"></p>
-            <h1>Book the menu you like</h1>
-            <p><i class="landmark fas fa-map-marker-alt"></i>Discover top-of-the-art restaurants we picked for you</p>
-            <a href="#">
-                <button name="explore_button" type="explore">Explore our restaurants</button>
-            </a>
+    <header>
+        <img src="images/logo/ohmyfood.svg" alt="Logo" class="logo">
+    </header>
+    <div class="location"><i class="landmark fas fa-map-marker-alt"></i>
+        <p class="Paris,Belleville"></p>
+    </div>
+    <div class="tagline">
+        <h1>Book the menu you like</h1>
+        <p>Discover top-of-the-art restaurants we picked for you</p>
+        <a href="#">
+            <button name="explore_button" type="explore">Explore our restaurants</button>
+        </a>
+    </div>
+    <div class="works">
+        <!-- TODO remove extra <div> surrounding <h2> -->
+        <div class="works-heading">
+            <h2>How it works</h2>
         </div>
-        </form>
-        <div class="works">
-            <div class="works-heading">
-                <h2>How it works</h2>
-            </div>
-            <div class="btn-wrapper">
-                <button name="work" type="button">Choose a restaurant</button>
-                <button name="work" type="button">Create your menu</button>
-                <button name="work" type="button">Go enjoy it at the restaurant</button>
-            </div>
+        <!-- TODO replace <button> with <div> -->
+        <div class="btn-wrapper">
+            <button name="work" type="button">Choose a restaurant</button>
+            <button name="work" type="button">Create your menu</button>
+            <button name="work" type="button">Go enjoy it at the restaurant</button>
         </div>
-        <main class="section wrapper">
-            <section id="Restaurants" class="rest">
-                <h2>Restaurants</h2>
-                <div class="restaurants-card-wrap">
-                    <a href="#" class="restaurants-card">
-                        <img src="/images/restaurants/the-full-platte.jpg" alt="the-full-platte" width="350">
-                        <h3>The Full Platte</h3>
-                        <p>New York</p>
-                    </a>
-                    <a href="#" class="restaurants-card">
-                        <img src="/images/restaurants/the-enchanted-plate.jpg" alt="the-enchanted-plate" width="350">
-                        <h3>The Enchanted Plate</h3>
-                        <p>New York</p>
-                    </a>
-                    <a href="#" class="restaurants-card">
-                        <img src="/images/restaurants/bastille.jpg" alt="bastille">
-                        <h3>Bastille</h3>
-                        <p>New York</p>
-                    </a>
-                    <a href="#" class="restaurants-card">
-                        <img src="/images/restaurants/le-gourmad.jpg" alt="le-gourmad">
-                        <h3>Le Gourmad</h3>
-                        <p>New York</p>
-                    </a>
-                </div> <!-- restaurants-card-wrap End-->
-            </section>
-        </main> <!--works-card-wrap End-->
-    <!--</div>-->
+    </div>
+    <main class="section-wrapper">
+        <!-- TODO use only class for styling -->
+        <!-- TODO spell out full names -->
+        <!-- TODO take out <section> -->
+        <section id="Restaurants" class="rest">
+            <h2>Restaurants</h2>
+            <div class="restaurants-card-wrap">
+                <a href="#" class="restaurants-card">
+                    <img src="/images/restaurants/the-full-platte.jpg" alt="the-full-platte">
+                    <h3>The Full Platte</h3>
+                    <p>New York</p>
+                </a>
+                <a href="#" class="restaurants-card">
+                    <img src="/images/restaurants/the-enchanted-plate.jpg" alt="the-enchanted-plate">
+                    <h3>The Enchanted Plate</h3>
+                    <p>New York</p>
+                </a>
+                <a href="#" class="restaurants-card">
+                    <img src="/images/restaurants/bastille.jpg" alt="bastille">
+                    <h3>Bastille</h3>
+                    <p>New York</p>
+                </a>
+                <a href="#" class="restaurants-card">
+                    <img src="/images/restaurants/le-gourmad.jpg" alt="le-gourmad">
+                    <h3>Le Gourmad</h3>
+                    <p>New York</p>
+                </a>
+            </div> <!-- restaurants-card-wrap End-->
+        </section>
+    </main> <!--works-card-wrap End-->
     <!-- Footer -->
+    <!-- TODO remove "footer-list" -->
     <footer class="footer">
         <div class="footer-list">
             <div class="row"></div>
@@ -84,6 +87,8 @@
             <div class="footer-list">
                 <h4>contact</h4>
             </div>
+        </div>
     </footer>
 </body>
+
 </html>
