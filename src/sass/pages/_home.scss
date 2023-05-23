@@ -66,12 +66,12 @@ button {
     width: 180px;
     color: black;
     text-decoration: none;
-}
 
-.restaurants-card img {
-    object-fit: cover;
-    width: 100px;
-    height: 180px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    img {
+        object-fit: cover;
+        width: 100px;
+        height: 180px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
 }

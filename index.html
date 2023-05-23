@@ -4,53 +4,48 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Select your meal and add it to your favorites!" />
-    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
-    <link rel="stylesheet" href="./public/styles/main.scss">
+    <link rel="stylesheet" href="./public/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" />
     <script src="https://kit.fontawesome.com/d593006093.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logo/ohmyfood.svg" alt="Logo" class="logo">
+        <img src="./public/images/" alt="Logo" class="logo">
     </header>
     <div class="location"><i class="landmark fas fa-map-marker-alt"></i>
-        <p class="Paris,Belleville"></p>
+        <p>Paris, Belleville</p>
     </div>
     <div class="tagline">
         <h1>Book the menu you like</h1>
         <p>Discover top-of-the-art restaurants we picked for you</p>
-        <a href="#">
-            <button name="explore_button" type="explore">Explore our restaurants</button>
-        </a>
+        <button name="explore_button" type="explore">Explore our restaurants</button>
     </div>
     <div class="works">
-        <!-- TODO remove extra <div> surrounding <h2> -->
-        <div class="works-heading">
-            <h2>How it works</h2>
-        </div>
-        <!-- TODO replace <button> with <div> -->
+        <h2>How it works</h2>
         <div class="btn-wrapper">
-            <button name="work" type="button">Choose a restaurant</button>
-            <button name="work" type="button">Create your menu</button>
-            <button name="work" type="button">Go enjoy it at the restaurant</button>
+            <div class="step">
+                <div class="step-number">1</div><span class="step-text"><i
+                        class="fa-solid fa-mobile-screen-button"></i>Choose a restaurant</span>
+            </div>
+            <div>Create your menu</div>
+            <div>Go enjoy it at the restaurant</div>
         </div>
     </div>
     <main class="section-wrapper">
         <!-- TODO use only class for styling -->
         <!-- TODO spell out full names -->
         <!-- TODO take out <section> -->
-        <section id="Restaurants" class="rest">
+        <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurants-card-wrap">
                 <a href="#" class="restaurants-card">
-                    <img src="/images/restaurants/the-full-platte.jpg" alt="the-full-platte">
+                    <img src="./public/images/restaurants/the-full-platte.jpg" alt="the-full-platte">
                     <h3>The Full Platte</h3>
                     <p>New York</p>
                 </a>
@@ -75,9 +70,11 @@
     <!-- Footer -->
     <!-- TODO remove "footer-list" -->
     <footer class="footer">
+        <h2>OhMyFood</h2>
         <div class="footer-list">
-            <div class="row"></div>
-            <h4>About</h4>
+            <div class="footer-list">
+                <h3>Suggest a restaurant</h3>
+            </div>
             <div class="footer-list">
                 <h4>Our Accommodations</h4>
             </div>
