@@ -18,19 +18,17 @@
 .tagline {
     font-size: 12px;
     padding: 0 25px 15px 25px;
-}
 
-button {
-    background-color: $primary-color;
-    color: $white-color;
-    display: inline-block;
-    border-radius: 5px;
-    padding: 8px 20px;
-    margin: 3px;
+    button {
+        background-image: linear-gradient($secondary-color,$primary-color);
+        border-radius: 5px;
+        padding: 8px 20px;
+        margin: 3px;
 
-    &:hover {
-        background-color: $secondary-color;
-        color: $white-color;
+        &:hover {
+            // background-color: $secondary-color;
+            // color: $white-color;
+        }
     }
 }
 
@@ -43,12 +41,12 @@ button {
     padding-bottom: 20px;
 }
 
-.rest h2 {
+.restaurants h2 {
     padding-top: 5px;
     padding-left: 33px;
 }
 
-.rest a {
+.restaurants a {
     text-decoration: none;
     color: black;
 }
@@ -57,6 +55,7 @@ button {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .restaurants-card {
     border-radius: 5px;

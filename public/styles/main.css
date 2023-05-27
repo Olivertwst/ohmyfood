@@ -352,6 +352,7 @@ html {
 body {
   background-color: #fff;
   line-height: 1.6;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -370,20 +371,12 @@ body {
   font-size: 12px;
   padding: 0 25px 15px 25px;
 }
-
-button {
-  background-color: #9356dc;
-  color: #fff;
-  display: inline-block;
+.tagline button {
+  background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 5px;
   padding: 8px 20px;
   margin: 3px;
 }
-button:hover {
-  background-color: #ff79da;
-  color: #fff;
-}
-
 .explore_button .rest {
   border-radius: 5px;
   margin: 3%;
@@ -393,12 +386,12 @@ button:hover {
   padding-bottom: 20px;
 }
 
-.rest h2 {
+.restaurants h2 {
   padding-top: 5px;
   padding-left: 33px;
 }
 
-.rest a {
+.restaurants a {
   text-decoration: none;
   color: black;
 }
