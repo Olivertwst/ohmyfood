@@ -373,10 +373,16 @@ body {
 }
 .tagline button {
   background-image: linear-gradient(#ff79da, #9356dc);
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 8px 20px;
   margin: 3px;
+  border-style: none;
 }
+.tagline button:hover {
+  background-color: #ff79da;
+  color: #fff;
+}
+
 .explore_button .rest {
   border-radius: 5px;
   margin: 3%;
@@ -390,18 +396,11 @@ body {
   padding-top: 5px;
   padding-left: 33px;
 }
-
-.restaurants a {
+.restaurants h2 .restaurants a {
   text-decoration: none;
   color: black;
 }
-
-.restaurants-card-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.restaurants-card {
+.restaurants h2 .restaurants a .restaurants-card {
   border-radius: 5px;
   padding: 5px;
   background-color: white;
@@ -410,12 +409,25 @@ body {
   color: black;
   text-decoration: none;
 }
-.restaurants-card img {
+.restaurants h2 .restaurants a .restaurants-card .restaurants-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: none;
+  margin: 1%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 15px;
+}
+
+img {
   object-fit: cover;
-  width: 100px;
+  width: 280px;
   height: 180px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

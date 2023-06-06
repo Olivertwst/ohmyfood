@@ -20,14 +20,15 @@
     padding: 0 25px 15px 25px;
 
     button {
-        background-image: linear-gradient($secondary-color,$primary-color);
-        border-radius: 5px;
+        background-image: linear-gradient($secondary-color, $primary-color);
+        border-radius: 20px;
         padding: 8px 20px;
         margin: 3px;
+        border-style: none;
 
         &:hover {
-            // background-color: $secondary-color;
-            // color: $white-color;
+            background-color: $secondary-color;
+            color: $white-color;
         }
     }
 }
@@ -44,33 +45,40 @@
 .restaurants h2 {
     padding-top: 5px;
     padding-left: 33px;
-}
 
-.restaurants a {
-    text-decoration: none;
-    color: black;
-}
+    .restaurants a {
+        text-decoration: none;
+        color: black;
 
-.restaurants-card-wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
+        .restaurants-card {
+            border-radius: 5px;
+            padding: 5px;
+            background-color: white;
+            height: 180px;
+            width: 180px;
+            color: black;
+            text-decoration: none;
 
-
-.restaurants-card {
-    border-radius: 5px;
-    padding: 5px;
-    background-color: white;
-    height: 180px;
-    width: 180px;
-    color: black;
-    text-decoration: none;
-
-    img {
-        object-fit: cover;
-        width: 100px;
-        height: 180px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+           .restaurants-card-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                background-color: none;
+                margin: 1%;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                gap: 15px;
+            }
+        }
     }
+}
+
+img {
+    object-fit: cover;
+    width: 280px;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
