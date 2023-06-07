@@ -445,37 +445,14 @@ step .tagline {
   padding-bottom: 20px;
 }
 
-.restaurants h2 {
-  padding-top: 5px;
-  padding-left: 33px;
-}
-
-.restaurants h2 .restaurants a {
-  text-decoration: none;
-  color: black;
-}
-
-.restaurants h2 .restaurants a .restaurants-card {
-  border-radius: 5px;
-  padding: 5px;
+.restaurants {
+  width: 365px;
   background-color: white;
-  height: 180px;
-  width: 180px;
-  color: black;
-  text-decoration: none;
-}
-
-.restaurants h2 .restaurants a .restaurants-card .restaurants-card-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: none;
-  margin: 1%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  gap: 15px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+  height: 275px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 img {
