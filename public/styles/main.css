@@ -464,4 +464,25 @@ img {
   border-top-right-radius: 10px;
 }
 
+footer {
+  background-color: #353535;
+  padding: 25px;
+  color: #fff;
+}
+
+.footer-title {
+  font-family: "shrikhand", "sans-serif";
+  padding: 5px 0 20px 0;
+  font-size: 1.2rem;
+  margin: 0px 0px 15px 0px;
+}
+
+.footer-list {
+  list-style-type: none;
+  margin: px 25px 5px -38px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=main.css.map */

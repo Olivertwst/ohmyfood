@@ -57,6 +57,7 @@ main {
     font-size: 14px;
 }
 
+
 i {
     width: 20px;
 }
@@ -99,43 +100,31 @@ i {
     position: relative;
 }
 
-// .restaurants h2 {
-// padding-top: 5px;
-// padding-left: 33px;
-// }
-
-// .restaurants h2 .restaurants a {
-// text-decoration: none;
-// color: black;
-// }
-
-// .restaurants h2 .restaurants a .restaurants-card {
-// border-radius: 5px;
-// padding: 5px;
-// background-color: white;
-// height: 180px;
-// width: 180px;
-// color: black;
-// text-decoration: none;
-// }
-
-// .restaurants h2 .restaurants a .restaurants-card {
-// display: flex;
-// flex-wrap: wrap;
-// justify-content: center;
-// background-color: none;
-// margin: 1%;
-// padding-left: 10px;
-// padding-right: 10px;
-// padding-top: 5px;
-// padding-bottom: 5px;
-// gap: 15px;
-// }
-
 img {
     object-fit: cover;
     width: 280px;
     height: 180px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+footer {
+    background-color: #353535;
+    padding: 25px;
+    color: $white-color;
+}
+
+.footer-title {
+    font-family: "shrikhand", "sans-serif";
+    padding: 5px 0 20px 0;
+    font-size: 1.2rem;
+    margin: 0px 0px 15px 0px;
+}
+
+.footer-list {
+    list-style-type: none;
+    margin: px 25px 5px -38px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
 }
