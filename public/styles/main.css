@@ -355,22 +355,74 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logo {
+  display: flex;
+  justify-content: center;
   width: 100px;
   height: 100px;
 }
 
-.works-heading {
-  background-color: #fff;
-}
-.works .btn-wraper {
+.howto-heading {
   background-color: #fff;
 }
 
-.tagline {
+.howto-heading .btn-wraper {
+  background-color: #fff;
+}
+
+.howto {
+  display: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.step-number {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #9356dc;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 25px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+i {
+  width: 20px;
+}
+
+step .tagline {
   font-size: 12px;
   padding: 0 25px 15px 25px;
 }
+
 .tagline button {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 20px;
@@ -378,6 +430,7 @@ body {
   margin: 3px;
   border-style: none;
 }
+
 .tagline button:hover {
   background-color: #ff79da;
   color: #fff;
@@ -396,10 +449,12 @@ body {
   padding-top: 5px;
   padding-left: 33px;
 }
+
 .restaurants h2 .restaurants a {
   text-decoration: none;
   color: black;
 }
+
 .restaurants h2 .restaurants a .restaurants-card {
   border-radius: 5px;
   padding: 5px;
@@ -409,6 +464,7 @@ body {
   color: black;
   text-decoration: none;
 }
+
 .restaurants h2 .restaurants a .restaurants-card .restaurants-card-wrap {
   display: flex;
   flex-wrap: wrap;

@@ -1,36 +1,83 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+body,
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logo {
+    display: flex;
+    justify-content: center;
     width: 100px;
     height: 100px;
 }
 
-.works {
-
-    &-heading {
-        background-color: $white-color;
-    }
-
-    .btn-wraper {
-        background-color: $white-color;
-    }
-
+.howto-heading {
+    background-color: $white-color;
 }
+
+.howto-heading .btn-wraper {
+    background-color: $white-color;
+}
+
+.howto {
+    display: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.step-number {
+    display: flex;
+    justify-content: flex-start;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 25px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+i {
+    width: 20px;
+}
+step
 
 .tagline {
     font-size: 12px;
     padding: 0 25px 15px 25px;
+}
 
-    button {
-        background-image: linear-gradient($secondary-color, $primary-color);
-        border-radius: 20px;
-        padding: 8px 20px;
-        margin: 3px;
-        border-style: none;
+.tagline button {
+    background-image: linear-gradient($secondary-color, $primary-color);
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin: 3px;
+    border-style: none;
+}
 
-        &:hover {
-            background-color: $secondary-color;
-            color: $white-color;
-        }
-    }
+.tagline button:hover {
+    background-color: $secondary-color;
+    color: $white-color;
 }
 
 .explore_button .rest {
@@ -45,34 +92,34 @@
 .restaurants h2 {
     padding-top: 5px;
     padding-left: 33px;
+}
 
-    .restaurants a {
-        text-decoration: none;
-        color: black;
+.restaurants h2 .restaurants a {
+    text-decoration: none;
+    color: black;
+}
 
-        .restaurants-card {
-            border-radius: 5px;
-            padding: 5px;
-            background-color: white;
-            height: 180px;
-            width: 180px;
-            color: black;
-            text-decoration: none;
+.restaurants h2 .restaurants a .restaurants-card {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    height: 180px;
+    width: 180px;
+    color: black;
+    text-decoration: none;
+}
 
-           .restaurants-card-wrap {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                background-color: none;
-                margin: 1%;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                gap: 15px;
-            }
-        }
-    }
+.restaurants h2 .restaurants a .restaurants-card .restaurants-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: none;
+    margin: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 15px;
 }
 
 img {
