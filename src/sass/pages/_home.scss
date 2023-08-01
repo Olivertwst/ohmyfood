@@ -144,33 +144,37 @@ header {
 }
 
 img{
-    width: 300px;
+    width: 275px;
     height: 175px;
     border-radius: 7%;
 }
 
-.card h3 {
+.card {
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
+    text-decoration: none;
 }
 
 .card-text {
     text-decoration: none;
 }
 
-.span {
+.new {
     display: flex;
     justify-content: flex-start;
-    flex-direction: row-reverse;
-    text-decoration: none;
+    position: absolute;
+    left: 225px;
+    top: 25px;
+    color: $white-color; 
+    border-style: solid;
+    border-radius: 3px;
+    background-color: $tertiary-color;
 }
 
 .heart {
+    position: absolute;
+    left: 150px;
+    justify-content: flex-start;
     display: flex;
-    flex-direction: row-reverse;
-    width: 280px;
-    height: 280px;
-    margin-top: -50px;
-    text-decoration: none;
 }
