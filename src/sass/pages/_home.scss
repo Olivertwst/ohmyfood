@@ -172,9 +172,9 @@ img{
     background-color: $tertiary-color;
 }
 
-.heart {
+.fa-heart::before {
     position: absolute;
-    left: 150px;
+    left: 200px;
     justify-content: flex-start;
     display: flex;
 }
