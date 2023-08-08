@@ -489,6 +489,20 @@ button:hover {
   width: 25%;
 }
 
+.step-number {
+  display: flex;
+  justify-content: center;
+  background-color: #9356dc;
+  border-radius: 105px;
+  width: 25px;
+  height: 25px;
+  right: 15px;
+  position: relative;
+  padding: 6px;
+  font-size: 14px;
+  align-items: center;
+}
+
 .restaurants {
   width: 275px;
   height: 275px;
@@ -520,25 +534,20 @@ img {
   display: flex;
   justify-content: flex-start;
   position: absolute;
-<<<<<<< HEAD
   left: 185px;
   top: 25px;
   padding: 3px 25px 3px 25px;
   color: #099774;
   border-style: none;
-=======
-  left: 225px;
+  left: 185px;
   top: 25px;
-  color: #fff;
-  border-style: solid;
->>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
+  border-style: none;
   border-radius: 3px;
   background-color: #99e2d0;
 }
 
 .heart {
   position: absolute;
-<<<<<<< HEAD
   left: 200px;
   bottom: 55px;
   height: 25px;
@@ -552,11 +561,6 @@ img {
   display: flex;
   align-items: flex-start;
   width: 55%;
-=======
-  left: 150px;
-  justify-content: flex-start;
-  display: flex;
->>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
 }
 
 footer {

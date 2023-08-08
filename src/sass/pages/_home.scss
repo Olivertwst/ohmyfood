@@ -40,7 +40,7 @@ header {
     i {
         display: flex;
         align-items: flex-start;
-       padding: 5px 15px 0 15px;
+        padding: 5px 15px 0 15px;
         flex-direction: row;
     }
 }
@@ -133,19 +133,17 @@ button:hover {
         padding: 6px;
         font-size: 14px;
         align-items: center;
-        
+
     }
 
     .i {
         display: flex;
         align-items: flex-start;
         width: 25%;
-        
+
     }
 }
 
-<<<<<<< HEAD
-=======
 .step-number {
     display: flex;
     justify-content: center;
@@ -160,7 +158,7 @@ button:hover {
     align-items: center;
 }
 
->>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
+
 .restaurants {
     width: 275px;
     height: 275px;
@@ -170,76 +168,56 @@ button:hover {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
     position: relative;
 }
-img{
+
+img {
     width: 275px;
     height: 175px;
     border-radius: 7%;
 }
 
-<<<<<<< HEAD
-=======
-img{
-    width: 275px;
-    height: 175px;
-    border-radius: 7%;
-}
-
->>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
 .card {
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
     text-decoration: none;
-}
 
-.card-text {
-    text-decoration: none;
+    .card-text {
+        text-decoration: none;
+    }
 }
 
 .new {
     display: flex;
     justify-content: flex-start;
     position: absolute;
-<<<<<<< HEAD
     left: 185px;
     top: 25px;
     padding: 3px 25px 3px 25px;
     color: #099774;
     border-style: none;
-=======
-    left: 225px;
+    left: 185px;
     top: 25px;
-    color: $white-color; 
-    border-style: solid;
->>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
+    border-style: none;
     border-radius: 3px;
     background-color: $tertiary-color;
-}
 
-<<<<<<< HEAD
-.heart {
-    position: absolute;
-    left: 200px;
-    bottom: 55px;
-    height: 25px;
-    justify-content: flex-start;
-    display: flex;
-
-    .heart:hover {
-        background-image: linear-gradient(to top left, $secondary-color, $primary-color);
-    }
-
-    .i {
+    .heart {
+        position: absolute;
+        left: 200px;
+        bottom: 55px;
+        height: 25px;
+        justify-content: flex-start;
         display: flex;
-        align-items: flex-start;
-        width: 55%;
-        // flex-direction: row;
+
+        .heart:hover {
+            background-image: linear-gradient(to top left, $secondary-color, $primary-color);
+        }
+
+        .i {
+            display: flex;
+            align-items: flex-start;
+            width: 55%;
+            // flex-direction: row;
+        }
     }
-=======
-.fa-heart::before {
-    position: absolute;
-    left: 200px;
-    justify-content: flex-start;
-    display: flex;
->>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
 }
