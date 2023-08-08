@@ -144,6 +144,23 @@ button:hover {
     }
 }
 
+<<<<<<< HEAD
+=======
+.step-number {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    border-radius: 105px;
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    position: relative;
+    padding: 6px;
+    font-size: 14px;
+    align-items: center;
+}
+
+>>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
 .restaurants {
     width: 275px;
     height: 275px;
@@ -159,6 +176,15 @@ img{
     border-radius: 7%;
 }
 
+<<<<<<< HEAD
+=======
+img{
+    width: 275px;
+    height: 175px;
+    border-radius: 7%;
+}
+
+>>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
 .card {
     display: flex;
     justify-content: space-between;
@@ -174,15 +200,23 @@ img{
     display: flex;
     justify-content: flex-start;
     position: absolute;
+<<<<<<< HEAD
     left: 185px;
     top: 25px;
     padding: 3px 25px 3px 25px;
     color: #099774;
     border-style: none;
+=======
+    left: 225px;
+    top: 25px;
+    color: $white-color; 
+    border-style: solid;
+>>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
     border-radius: 3px;
     background-color: $tertiary-color;
 }
 
+<<<<<<< HEAD
 .heart {
     position: absolute;
     left: 200px;
@@ -201,4 +235,11 @@ img{
         width: 55%;
         // flex-direction: row;
     }
+=======
+.fa-heart::before {
+    position: absolute;
+    left: 200px;
+    justify-content: flex-start;
+    display: flex;
+>>>>>>> 1c967d1d861094813edc75273fc2d672f632c229
 }
