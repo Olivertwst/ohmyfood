@@ -395,8 +395,10 @@ header {
   font-size: 15px;
 }
 .location i {
-  padding-top: 5px;
-  padding-right: 15px;
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 15px 0 15px;
+  flex-direction: row;
 }
 
 .tagline {
@@ -419,9 +421,10 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 25px 15px 25px;
-  margin: 0 25px 0px 25px;
+  margin: 0 25px 0 25px;
 }
-.tagline button {
+
+button {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
   width: 215px;
@@ -432,10 +435,12 @@ header {
   align-items: center;
   color: white;
 }
-.tagline button:hover {
-  background-image: linear-gradient(#ff79da, #9356dc);
+
+button:hover {
+  background-image: linear-gradient(to top left, #ff79da, #9356dc);
 }
-.tagline .btn-wraper {
+
+.btn-wraper {
   background-color: #fff;
 }
 
@@ -463,37 +468,48 @@ header {
   box-shadow: solid;
   background-color: #f7f7f7;
   align-items: center;
+  flex-direction: column;
 }
-
-.step-number {
+.step .step-number {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #9356dc;
   border-radius: 105px;
   width: 25px;
   height: 25px;
-  right: 15px;
+  right: 105px;
   position: relative;
   padding: 6px;
   font-size: 14px;
   align-items: center;
 }
+.step .i {
+  display: flex;
+  align-items: flex-start;
+  width: 25%;
+}
 
 .restaurants {
-  width: 285px;
-  height: 285px;
+  width: 275px;
+  height: 275px;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 28px;
-  height: 275px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
-.card h3 {
+img {
+  width: 275px;
+  height: 175px;
+  border-radius: 7%;
+}
+
+.card {
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
+  text-decoration: none;
 }
 
 .card-text {
@@ -503,17 +519,31 @@ header {
 .new {
   display: flex;
   justify-content: flex-start;
-  flex-direction: row-reverse;
-  text-decoration: none;
+  position: absolute;
+  left: 185px;
+  top: 25px;
+  padding: 3px 25px 3px 25px;
+  color: #099774;
+  border-style: none;
+  border-radius: 3px;
+  background-color: #99e2d0;
 }
 
 .heart {
+  position: absolute;
+  left: 200px;
+  bottom: 55px;
+  height: 25px;
+  justify-content: flex-start;
   display: flex;
-  flex-direction: row-reverse;
-  width: 280px;
-  height: 280px;
-  margin-top: -50px;
-  text-decoration: none;
+}
+.heart .heart:hover {
+  background-image: linear-gradient(to top left, #ff79da, #9356dc);
+}
+.heart .i {
+  display: flex;
+  align-items: flex-start;
+  width: 55%;
 }
 
 footer {
