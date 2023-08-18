@@ -503,6 +503,19 @@ button:hover {
   align-items: center;
 }
 
+.restaurants-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .restaurants-card {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+
 .restaurants {
   width: 275px;
   height: 275px;
@@ -525,8 +538,7 @@ img {
   flex-direction: column-reverse;
   text-decoration: none;
 }
-
-.card-text {
+.card .card-text {
   text-decoration: none;
 }
 
@@ -545,8 +557,7 @@ img {
   border-radius: 3px;
   background-color: #99e2d0;
 }
-
-.heart {
+.new .heart {
   position: absolute;
   left: 200px;
   bottom: 55px;
@@ -554,10 +565,10 @@ img {
   justify-content: flex-start;
   display: flex;
 }
-.heart .heart:hover {
+.new .heart .heart:hover {
   background-image: linear-gradient(to top left, #ff79da, #9356dc);
 }
-.heart .i {
+.new .heart .i {
   display: flex;
   align-items: flex-start;
   width: 55%;

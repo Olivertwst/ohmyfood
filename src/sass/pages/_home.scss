@@ -158,6 +158,17 @@ button:hover {
     align-items: center;
 }
 
+.restaurants-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 25px;
+    }
+}
 
 .restaurants {
     width: 275px;
