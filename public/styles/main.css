@@ -383,7 +383,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 18px;
 }
 
 .location {
@@ -530,6 +529,10 @@ img {
   width: 275px;
   height: 175px;
   border-radius: 7%;
+}
+
+.logo {
+  padding: 100px 0 10px 0;
 }
 
 .card {
