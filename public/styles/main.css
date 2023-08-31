@@ -378,6 +378,10 @@ main {
   flex-direction: column;
   align-items: center;
 }
+main h2 {
+  align-self: flex-start;
+  padding-left: 20px;
+}
 
 header {
   width: 100%;
@@ -444,7 +448,7 @@ button:hover {
 }
 
 .howto {
-  display: flex-end;
+  display: flex;
   justify-content: flex-end;
   flex-direction: column;
 }
@@ -454,7 +458,7 @@ button:hover {
   padding: 15px 45px 15px 45px;
   max-width: 375px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .step {
@@ -464,7 +468,7 @@ button:hover {
   width: 85%;
   border-radius: 10px;
   border-style: none;
-  box-shadow: solid;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   background-color: #f7f7f7;
   align-items: center;
   flex-direction: column;
@@ -524,15 +528,15 @@ button:hover {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-
-img {
+.restaurants img {
   width: 275px;
   height: 175px;
-  border-radius: 7%;
+  border-radius: 7px;
+  object-fit: cover;
 }
 
 .logo {
-  padding: 100px 0 10px 0;
+  padding: 20px 0 20px 0;
 }
 
 .card {
@@ -560,7 +564,8 @@ img {
   border-radius: 3px;
   background-color: #99e2d0;
 }
-.new .heart {
+
+.heart {
   position: absolute;
   left: 200px;
   bottom: 55px;
@@ -568,10 +573,10 @@ img {
   justify-content: flex-start;
   display: flex;
 }
-.new .heart .heart:hover {
+.heart:hover {
   background-image: linear-gradient(to top left, #ff79da, #9356dc);
 }
-.new .heart .i {
+.heart i {
   display: flex;
   align-items: flex-start;
   width: 55%;
@@ -592,7 +597,7 @@ footer {
 
 .footer-list {
   list-style-type: none;
-  margin: px 25px 5px -38px;
+  margin: 15px 5px 15px 5px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
