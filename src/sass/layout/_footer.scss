@@ -6,7 +6,7 @@ footer {
 
 .footer-title {
     font-family: "shrikhand", "sans-serif";
-    padding: 5px 0 20px 0;
+    padding: 15px 0 5px 0;
     font-size: 1.2rem;
     margin: 0px 0px 15px 0px;
 }
@@ -28,4 +28,10 @@ footer {
         color: $white-color;
         text-decoration: none;
     }
+
+    .fa-cutlery:before{
+        display: flex;
+        margin: 25px;
+    }
+
 }

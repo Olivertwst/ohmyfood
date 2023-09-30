@@ -434,13 +434,14 @@ button {
   height: 50px;
   display: flex;
   border-style: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
   color: white;
 }
 
 button:hover {
-  background-image: linear-gradient(to top left, #ff79da, #9356dc);
+  background: #ff93e1;
 }
 
 .btn-wraper {
@@ -486,26 +487,6 @@ button:hover {
   font-size: 14px;
   align-items: center;
 }
-.step .i {
-  display: flex;
-  align-items: flex-start;
-  width: 25%;
-}
-
-.step-number {
-  display: flex;
-  justify-content: center;
-  background-color: #9356dc;
-  border-radius: 105px;
-  width: 25px;
-  height: 25px;
-  right: 15px;
-  position: relative;
-  padding: 6px;
-  font-size: 14px;
-  align-items: center;
-}
-
 .restaurants-card {
   display: flex;
   flex-direction: column;
@@ -520,8 +501,8 @@ button:hover {
 }
 
 .restaurants {
-  width: 275px;
-  height: 275px;
+  width: 300px;
+  height: 255px;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 28px;
@@ -529,9 +510,9 @@ button:hover {
   position: relative;
 }
 .restaurants img {
-  width: 275px;
+  width: 300px;
   height: 175px;
-  border-radius: 7px;
+  border-radius: 9px;
   object-fit: cover;
 }
 
@@ -543,9 +524,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
-  text-decoration: none;
-}
-.card .card-text {
+  color: black;
   text-decoration: none;
 }
 
@@ -553,33 +532,29 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   position: absolute;
-  left: 185px;
+  left: 200px;
   top: 25px;
   padding: 3px 25px 3px 25px;
   color: #099774;
   border-style: none;
-  left: 185px;
+  left: 200px;
   top: 25px;
   border-style: none;
   border-radius: 3px;
   background-color: #99e2d0;
 }
 
-.heart {
+.fa-heart::before {
   position: absolute;
-  left: 200px;
+  left: 260px;
   bottom: 55px;
+  margin: -15px;
   height: 25px;
   justify-content: flex-start;
   display: flex;
 }
-.heart:hover {
+.fa-heart::before:hover {
   background-image: linear-gradient(to top left, #ff79da, #9356dc);
-}
-.heart i {
-  display: flex;
-  align-items: flex-start;
-  width: 55%;
 }
 
 footer {
@@ -590,7 +565,7 @@ footer {
 
 .footer-title {
   font-family: "shrikhand", "sans-serif";
-  padding: 5px 0 20px 0;
+  padding: 15px 0 5px 0;
   font-size: 1.2rem;
   margin: 0px 0px 15px 0px;
 }
@@ -612,6 +587,10 @@ footer {
 .footer-list a {
   color: #fff;
   text-decoration: none;
+}
+.footer-list .fa-cutlery:before {
+  display: flex;
+  margin: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
