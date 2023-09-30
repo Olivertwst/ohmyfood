@@ -424,7 +424,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 25px 15px 25px;
-  margin: 0 25px 0 25px;
+  text-align: center;
 }
 
 button {
@@ -441,7 +441,7 @@ button {
 }
 
 button:hover {
-  background: #ff93e1;
+  background-image: linear-gradient(#ff93e1, #a16be0);
 }
 
 .btn-wraper {
@@ -464,15 +464,15 @@ button:hover {
 
 .step {
   display: flex;
-  justify-content: flex-end;
   margin: 5%;
-  width: 85%;
-  border-radius: 10px;
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
   border-style: none;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   background-color: #f7f7f7;
   align-items: center;
-  flex-direction: column;
+  position: relative;
 }
 .step .step-number {
   display: flex;
@@ -481,23 +481,33 @@ button:hover {
   border-radius: 105px;
   width: 25px;
   height: 25px;
-  right: 105px;
-  position: relative;
+  left: -12px;
+  position: absolute;
   padding: 6px;
   font-size: 14px;
   align-items: center;
 }
-.restaurants-card {
+.step-text {
+  display: flex;
+  gap: 15px;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.restaurant-cards {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
 @media only screen and (min-width: 768px) {
-  .restaurants-card {
+  .restaurant-cards {
     flex-direction: row;
     gap: 25px;
   }
+}
+.restaurant-card {
+  text-decoration: none;
 }
 
 .restaurants {
@@ -544,7 +554,7 @@ button:hover {
   background-color: #99e2d0;
 }
 
-.fa-heart::before {
+.heart {
   position: absolute;
   left: 260px;
   bottom: 55px;
@@ -553,7 +563,7 @@ button:hover {
   justify-content: flex-start;
   display: flex;
 }
-.fa-heart::before:hover {
+.heart:hover {
   background-image: linear-gradient(to top left, #ff79da, #9356dc);
 }
 
