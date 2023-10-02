@@ -85,7 +85,7 @@ button {
     height: 50px;
     display: flex;
     border-style: none;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
     justify-content: center;
     align-items: center;
     color: white;
@@ -93,12 +93,11 @@ button {
 
 button:hover {
     // TODO USE SASS LIGHTEN FUNCTION ON EACH COLOR BELOW
-    // background: lighten( $secondary-color, $amount: 5%)
     background-image: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color, 5%));
 }
 
 .btn-wraper {
-    background-color: $white-color;
+    background-color: $primary-color;
 }
 
 .howto {
@@ -109,7 +108,7 @@ button:hover {
 
 .howto h2 {
     font-size: 23px;
-    padding: 15px 45px 15px 45px;
+    padding: 15px 25px 15px 25px;
     max-width: 375px;
     display: flex;
     justify-content: flex-start;
@@ -123,7 +122,7 @@ button:hover {
     height: 60px;
     border-radius: 20px;
     border-style: none;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .3);
     background-color: #f7f7f7;
     align-items: center;
     position: relative;
@@ -141,6 +140,7 @@ button:hover {
         padding: 6px;
         font-size: 14px;
         align-items: center;
+        color: white;
 
     }
 
@@ -151,8 +151,11 @@ button:hover {
         align-items: center;
     }
 
-    
+    .fa-store::before {
+        color: $primary-color;
+    }
 }
+
 
 .restaurant {
     &-cards {
@@ -207,16 +210,14 @@ button:hover {
     display: flex;
     justify-content: flex-start;
     position: absolute;
-    left: 200px;
-    top: 25px;
-    padding: 3px 25px 3px 25px;
+    padding: 3px 30px 3px 30px;
     color: #099774;
-    border-style: none;
     left: 200px;
-    top: 25px;
+    top: 35px;
     border-style: none;
     border-radius: 3px;
     background-color: $tertiary-color;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
 }
 
 .heart {

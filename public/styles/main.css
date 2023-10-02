@@ -434,7 +434,7 @@ button {
   height: 50px;
   display: flex;
   border-style: none;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
   color: white;
@@ -445,7 +445,7 @@ button:hover {
 }
 
 .btn-wraper {
-  background-color: #fff;
+  background-color: #9356dc;
 }
 
 .howto {
@@ -456,7 +456,7 @@ button:hover {
 
 .howto h2 {
   font-size: 23px;
-  padding: 15px 45px 15px 45px;
+  padding: 15px 25px 15px 25px;
   max-width: 375px;
   display: flex;
   justify-content: flex-start;
@@ -469,7 +469,7 @@ button:hover {
   height: 60px;
   border-radius: 20px;
   border-style: none;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
   background-color: #f7f7f7;
   align-items: center;
   position: relative;
@@ -486,12 +486,16 @@ button:hover {
   padding: 6px;
   font-size: 14px;
   align-items: center;
+  color: white;
 }
 .step-text {
   display: flex;
   gap: 15px;
   padding-left: 30px;
   align-items: center;
+}
+.step .fa-store::before {
+  color: #9356dc;
 }
 
 .restaurant-cards {
@@ -542,16 +546,14 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   position: absolute;
-  left: 200px;
-  top: 25px;
-  padding: 3px 25px 3px 25px;
+  padding: 3px 30px 3px 30px;
   color: #099774;
-  border-style: none;
   left: 200px;
-  top: 25px;
+  top: 35px;
   border-style: none;
   border-radius: 3px;
   background-color: #99e2d0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .heart {
