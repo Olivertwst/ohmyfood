@@ -156,6 +156,10 @@ button:hover {
     }
 }
 
+.emphasized-step {
+    background-color: lighten($primary-color, 35%);
+}
+
 
 .restaurant {
     &-cards {
@@ -204,6 +208,7 @@ button:hover {
     color: black;
     text-decoration: none;
 
+    h3 {}
 }
 
 .new {
@@ -222,20 +227,45 @@ button:hover {
 
 .heart {
     position: absolute;
-    left: 260px;
-    bottom: 55px;
+    left: 270px;
+    bottom: 45px;
     margin: -15px;
     height: 25px;
     justify-content: flex-start;
     display: flex;
+    font-size: 25px;
 
-    &:hover {
-        background-image: linear-gradient(to top left, $secondary-color, $primary-color);
-    }
+    // &:hover {
+    //     background-color: linear-gradient(to top left, $secondary-color, $primary-color);
+    // }
+    // .fill{
+
+    // }
 
     // i {
     //     // display: flex;
+
     //     // align-items: flex-start;
     //     // // flex-direction: row;
     // }
+}
+
+.heart-full {
+    position: absolute;
+    left: 255px;
+    bottom: 22px;
+    font-size: 25px;
+    opacity: 0;
+    transition: opacity 1s;
+
+    i {
+        background-image: linear-gradient(to top left, $secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
 }

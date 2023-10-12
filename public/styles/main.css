@@ -498,6 +498,10 @@ button:hover {
   color: #9356dc;
 }
 
+.emphasized-step {
+  background-color: #f2eafb;
+}
+
 .restaurant-cards {
   display: flex;
   flex-direction: column;
@@ -541,7 +545,6 @@ button:hover {
   color: black;
   text-decoration: none;
 }
-
 .new {
   display: flex;
   justify-content: flex-start;
@@ -558,15 +561,31 @@ button:hover {
 
 .heart {
   position: absolute;
-  left: 260px;
-  bottom: 55px;
+  left: 270px;
+  bottom: 45px;
   margin: -15px;
   height: 25px;
   justify-content: flex-start;
   display: flex;
+  font-size: 25px;
 }
-.heart:hover {
+
+.heart-full {
+  position: absolute;
+  left: 255px;
+  bottom: 22px;
+  font-size: 25px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.heart-full i {
   background-image: linear-gradient(to top left, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heart-full:hover {
+  opacity: 1;
 }
 
 footer {
