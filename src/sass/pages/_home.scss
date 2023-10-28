@@ -16,6 +16,18 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+.spinner {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    background: rgba(white, 85%);
+}
+// TODO create keyframe which hides the spinner using either transform scale or transform translate
+
 .loader {
     border: 16px solid #f3f3f3;
     /* Light grey */
@@ -27,9 +39,14 @@ html {
     animation: spin 2s linear infinite;
 
     @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 main {
@@ -131,6 +148,15 @@ button:hover {
 
 }
 
+.steps {
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
 .step {
     display: flex;
     margin: 5%;
@@ -223,8 +249,6 @@ button:hover {
     flex-direction: column-reverse;
     color: black;
     text-decoration: none;
-
-    h3 {}
 }
 
 .new {

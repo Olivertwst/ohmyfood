@@ -373,6 +373,17 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.spinner {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.85);
+}
+
 .loader {
   border: 16px solid #f3f3f3;
   /* Light grey */
@@ -481,6 +492,15 @@ button:hover {
   justify-content: flex-start;
 }
 
+@media only screen and (min-width: 992px) {
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 .step {
   display: flex;
   margin: 5%;
@@ -564,6 +584,7 @@ button:hover {
   color: black;
   text-decoration: none;
 }
+
 .new {
   display: flex;
   justify-content: flex-start;
