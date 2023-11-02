@@ -458,7 +458,6 @@ header {
   font-size: 15px;
   padding: 35px 25px 35px 25px;
   align-items: center;
-  background-color: #f7f7f7;
 }
 .tagline h1 {
   font-size: 23px;
@@ -663,10 +662,32 @@ i {
   justify-content: flex-start;
 }
 
+.food-menu {
+  width: 300px;
+  height: 255px;
+  position: relative;
+}
+.food-menu img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
 .menu-course h2 {
   width: 30px;
   border-bottom: solid 2px #99e2d0;
   white-space: nowrap;
+}
+
+.heart {
+  position: absolute;
+  left: 270px;
+  bottom: 45px;
+  margin: -15px;
+  height: 25px;
+  justify-content: flex-start;
+  display: flex;
+  font-size: 25px;
 }
 
 footer {

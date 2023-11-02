@@ -9,14 +9,38 @@
 //     font-family: "Shrikhand",sans-serif;
 // }
 
-i{
+i {
     display: flex;
     justify-content: flex-start;
 }
+
+.food-menu {
+    width: 300px;
+    height: 255px;
+    position: relative;
+
+    img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+    }
+}
+
 .menu-course {
     h2 {
         width: 30px;
         border-bottom: solid 2px $tertiary-color;
         white-space: nowrap;
     }
+}
+
+.heart {
+    position: absolute;
+    left: 270px;
+    bottom: 45px;
+    margin: -15px;
+    height: 25px;
+    justify-content: flex-start;
+    display: flex;
+    font-size: 25px;
 }
