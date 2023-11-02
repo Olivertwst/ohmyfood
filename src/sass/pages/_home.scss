@@ -27,6 +27,7 @@ html {
     background: rgba(white, 85%);
     transform: scale(0);
 }
+
 // TODO create keyframe which hides the spinner using either transform scale or transform translate
 
 .loader {
@@ -47,6 +48,17 @@ html {
         100% {
             transform: rotate(360deg);
         }
+    }
+}
+
+.top-part {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 

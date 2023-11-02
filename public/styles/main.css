@@ -404,6 +404,18 @@ html {
   }
 }
 
+.top-part {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .top-part {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -633,6 +645,12 @@ button:hover {
 }
 .heart-full:hover {
   opacity: 1;
+}
+
+.menu-course h2 {
+  width: 30px;
+  border-bottom: solid 2px #99e2d0;
+  white-space: nowrap;
 }
 
 footer {
