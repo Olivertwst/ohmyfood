@@ -25,7 +25,13 @@ html {
     align-items: center;
     z-index: 10000;
     background: rgba(white, 85%);
-    transform: scale(0);
+    animation: hider 0s 2s forwards;
+}
+
+@keyframes hider {
+    to {
+        transform: scale(0);
+    }
 }
 
 // TODO create keyframe which hides the spinner using either transform scale or transform translate

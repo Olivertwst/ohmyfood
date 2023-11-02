@@ -1,3 +1,18 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+// body,
+// html{
+//     font-family: "Shrikhand",sans-serif;
+// }
+
+i{
+    display: flex;
+    justify-content: flex-start;
+}
 .menu-course {
     h2 {
         width: 30px;

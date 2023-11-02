@@ -382,9 +382,14 @@ html {
   align-items: center;
   z-index: 10000;
   background: rgba(255, 255, 255, 0.85);
-  transform: scale(0);
+  animation: hider 0s 2s forwards;
 }
 
+@keyframes hider {
+  to {
+    transform: scale(0);
+  }
+}
 .loader {
   border: 16px solid #f3f3f3;
   /* Light grey */
@@ -645,6 +650,17 @@ button:hover {
 }
 .heart-full:hover {
   opacity: 1;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+i {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .menu-course h2 {
