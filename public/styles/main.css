@@ -657,9 +657,20 @@ button:hover {
   box-sizing: border-box;
 }
 
-i {
+header {
+  position: relative;
+  width: 100%;
+}
+header .arrow {
+  position: absolute;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  left: 0;
+  padding-left: 15px;
+}
+header .arrow .i {
+  font-size: 20px;
 }
 
 .food-menu {
@@ -668,8 +679,8 @@ i {
   position: relative;
 }
 .food-menu img {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
