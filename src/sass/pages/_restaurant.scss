@@ -64,22 +64,13 @@ header {
     flex-direction: column;
     gap: 25px;
     align-items: center;
-}
-
-h3 {
-    display: flex;
-    width: 300px;
-    height: 60px;
     border-radius: 25px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-    align-items: center;
-    position: relative;
 
-    p {
+    h3 {
         display: flex;
         width: 300px;
         height: 60px;
-        border-radius: none;
+        border-radius: 20px;
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
         align-items: center;
         position: relative;
