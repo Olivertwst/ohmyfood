@@ -701,6 +701,33 @@ header .arrow .i {
   font-size: 25px;
 }
 
+.entrees {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+h3 {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  position: relative;
+}
+h3 p {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  border-radius: none;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  position: relative;
+}
+
 footer {
   background-color: #353535;
   padding: 25px;
