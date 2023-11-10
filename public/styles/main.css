@@ -669,19 +669,23 @@ header .arrow {
   left: 0;
   padding-left: 15px;
 }
-header .arrow .i {
+header .arrow a {
+  text-decoration: none;
+  color: black;
+}
+header .arrow i {
   font-size: 20px;
 }
 
 .food-menu {
-  width: 300px;
-  height: 255px;
+  object-fit: cover;
   position: relative;
 }
 .food-menu img {
-  width: 200px;
-  height: 200px;
   object-fit: cover;
+  border-style: none;
+  width: 100vw;
+  max-height: 300px;
 }
 
 .menu-course h2 {
@@ -690,35 +694,30 @@ header .arrow .i {
   white-space: nowrap;
 }
 
-.heart {
-  position: absolute;
+.favorite {
   left: 270px;
   bottom: 45px;
   margin: -15px;
   height: 25px;
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
   display: flex;
   font-size: 25px;
 }
 
-.entrees {
+.menu-card {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 25px;
-  align-items: center;
-  border-radius: 25px;
-}
-.entrees h3 {
-  display: flex;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
   width: 300px;
   height: 60px;
-  border-radius: 20px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-  align-items: center;
-  position: relative;
 }
-
+.menu-card__price em {
+  font-weight: bold;
+  font-style: normal;
+}
 footer {
   background-color: #353535;
   padding: 25px;
