@@ -627,10 +627,11 @@ button:hover {
   left: 270px;
   bottom: 45px;
   margin: -15px;
-  height: 25px;
+  height: 25.5px;
   justify-content: flex-start;
   display: flex;
   font-size: 25px;
+  color: black;
 }
 
 .heart-full {
@@ -680,39 +681,58 @@ header .arrow i {
 .food-menu {
   object-fit: cover;
   position: relative;
+  background-color: #eae5e5;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
 }
-.food-menu img {
+
+img {
   object-fit: cover;
   border-style: none;
   width: 100vw;
   max-height: 300px;
 }
 
+.logo-img {
+  width: 175px;
+  margin: 25px 0 10px 0;
+}
+
+.menu-course {
+  padding-right: 20px;
+}
 .menu-course h2 {
   width: 30px;
   border-bottom: solid 2px #99e2d0;
   white-space: nowrap;
+  padding-right: 20px;
 }
 
 .favorite {
-  left: 270px;
-  bottom: 45px;
-  margin: -15px;
-  height: 25px;
   justify-content: space-between;
   flex-direction: row;
   display: flex;
   font-size: 25px;
+  color: black;
 }
 
 .menu-card {
   display: flex;
   border-radius: 15px;
+  margin: 15px 10px 15px 10px;
+  padding: 10px;
+  box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
   text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   color: black;
+  animation: fadeinup ease-in-out;
+  transition: padding-right 1s ease-in-out;
   width: 300px;
-  height: 60px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  height: 63px;
 }
 .menu-card__price em {
   font-weight: bold;

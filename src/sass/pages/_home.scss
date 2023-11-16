@@ -295,10 +295,11 @@ button:hover {
     left: 270px;
     bottom: 45px;
     margin: -15px;
-    height: 25px;
+    height: 25.5px;
     justify-content: flex-start;
     display: flex;
     font-size: 25px;
+    color: black;
 
     // &:hover {
     //     background-color: linear-gradient(to top left, $secondary-color, $primary-color);
@@ -313,7 +314,7 @@ button:hover {
     //     // align-items: flex-start;
     //     // // flex-direction: row;
     // }
-    
+
 }
 
 .heart-full {
