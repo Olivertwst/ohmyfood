@@ -685,13 +685,7 @@ header .arrow i {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
-}
-
-img {
-  object-fit: cover;
-  border-style: none;
-  width: 100vw;
-  max-height: 300px;
+  top: -40px;
 }
 
 .logo-img {
@@ -699,14 +693,27 @@ img {
   margin: 25px 0 10px 0;
 }
 
+.main-image {
+  object-fit: cover;
+  border-style: none;
+  height: 260px;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .menu-course {
-  padding-right: 20px;
+  border-bottom: solid 2px #99e2d0;
+  width: 30px;
 }
 .menu-course h2 {
-  width: 30px;
-  border-bottom: solid 2px #99e2d0;
   white-space: nowrap;
-  padding-right: 20px;
+  padding: 0;
 }
 
 .favorite {
@@ -718,7 +725,6 @@ img {
 }
 
 .menu-card {
-  display: flex;
   border-radius: 15px;
   margin: 15px 10px 15px 10px;
   padding: 10px;
@@ -734,10 +740,30 @@ img {
   width: 300px;
   height: 63px;
 }
+.menu-card__squeezer {
+  display: flex;
+  width: 350px;
+}
+.menu-card__text {
+  width: 250px;
+}
+.menu-card:hover .menu-card__text {
+  width: 200px;
+}
+.menu-card:hover .menu-card__squeezer {
+  width: 300px;
+}
+.menu-card__price {
+  width: 50px;
+}
 .menu-card__price em {
   font-weight: bold;
   font-style: normal;
 }
+.menu-card__checkmark {
+  width: 50px;
+}
+
 footer {
   background-color: #353535;
   padding: 25px;
