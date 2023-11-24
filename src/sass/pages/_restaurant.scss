@@ -40,6 +40,8 @@ header {
     border-top-right-radius: 25px;
     width: 100%;
     top: -40px;
+    padding-right: 50px;
+
 }
 
 
@@ -103,6 +105,7 @@ header {
     transition: padding-right 1s ease-in-out;
     width: 300px;
     height: 63px;
+    background-color: white;
 
     &__squeezer {
         display: flex;
@@ -114,7 +117,7 @@ header {
     }
 
     &:hover &__text {
-        width: 200px;
+        width: 200px; 
     }
 
     &:hover &__squeezer {
@@ -135,5 +138,14 @@ header {
     &__checkmark {
         // TODO 
         width: 50px;
+        background-color: $tertiary-color;
+    
+        i{
+            color: white;
+            display: flex;
+            justify-content: center;
+            width: 40px;
+            padding-top: 18px;
+        }
     }
 }
