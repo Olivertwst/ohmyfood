@@ -775,6 +775,12 @@ header .arrow i {
   padding-top: 18px;
 }
 
+.order button {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
 footer {
   background-color: #353535;
   padding: 25px;
