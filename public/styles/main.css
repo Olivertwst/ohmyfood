@@ -425,6 +425,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #f5f5f5;
 }
 main h2 {
   align-self: flex-start;
@@ -458,6 +459,7 @@ header {
   font-size: 15px;
   padding: 35px 25px 35px 25px;
   align-items: center;
+  background: #f5f5f5;
 }
 .tagline h1 {
   font-size: 23px;
@@ -591,9 +593,10 @@ button:hover {
 }
 .restaurants img {
   width: 300px;
-  height: 175px;
-  border-radius: 9px;
+  height: 180px;
   object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .logo {
@@ -817,9 +820,8 @@ footer {
   color: #fff;
   text-decoration: none;
 }
-.footer-list .fa-cutlery:before {
+.footer-list .fa-utensils:before {
   display: flex;
-  margin: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
