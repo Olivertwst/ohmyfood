@@ -729,9 +729,7 @@ header .arrow i {
 .menu-card {
   border-radius: 15px;
   margin: 15px 10px 15px 10px;
-  padding: 10px;
   box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.3);
-  position: relative;
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -746,9 +744,16 @@ header .arrow i {
 .menu-card__squeezer {
   display: flex;
   width: 350px;
+  transition: width 0.5s;
 }
 .menu-card__text {
   width: 250px;
+  transition: width 0.5s;
+}
+.menu-card__text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card:hover .menu-card__text {
   width: 200px;
@@ -765,14 +770,14 @@ header .arrow i {
 }
 .menu-card__checkmark {
   width: 50px;
+  height: 63px;
   background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-card__checkmark i {
   color: white;
-  display: flex;
-  justify-content: center;
-  width: 40px;
-  padding-top: 18px;
 }
 
 .order button {

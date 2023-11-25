@@ -93,9 +93,8 @@ header {
 .menu-card {
     border-radius: 15px;
     margin: 15px 10px 15px 10px;
-    padding: 10px;
     box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.3);
-    position: relative;
+    // position: relative;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -105,15 +104,22 @@ header {
     transition: padding-right 1s ease-in-out;
     width: 300px;
     height: 63px;
-    background-color: white; 
+    background-color: white;
 
     &__squeezer {
         display: flex;
         width: 350px;
+        transition: width 0.5s;
     }
 
     &__text {
         width: 250px;
+        transition: width 0.5s;
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     &:hover &__text {
@@ -122,6 +128,7 @@ header {
 
     &:hover &__squeezer {
         width: 300px;
+
     }
 
 
@@ -138,21 +145,21 @@ header {
     &__checkmark {
         // TODO 
         width: 50px;
+        height: 63px;
         background-color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         i {
             color: white;
-            display: flex;
-            justify-content: center;
-            width: 40px;
-            padding-top: 18px;
         }
     }
 }
 
-.order{
-    button{
-        display:flex;
+.order {
+    button {
+        display: flex;
         flex-direction: column;
         font-size: 15px;
     }
