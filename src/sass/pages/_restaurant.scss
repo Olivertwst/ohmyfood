@@ -40,7 +40,6 @@ header {
     border-top-right-radius: 25px;
     width: 100%;
     margin-top: -40px;
-    padding-right: 50px;
 
 }
 
@@ -90,6 +89,7 @@ header {
 
 .menu-cards {
     width: 100%;
+    padding-left: 15px;
 }
 
 .menu-card {
@@ -104,18 +104,19 @@ header {
     color: black;
     animation: fadeinup ease-in-out;
     transition: padding-right 1s ease-in-out;
-    width: 300px;
+    width: 340px;
     height: 63px;
     background-color: white;
+    display: block;
 
     &__squeezer {
         display: flex;
-        width: 350px;
+        width: 390px;
         transition: width 0.5s;
     }
 
     &__text {
-        width: 250px;
+        width: 290px;
         transition: width 0.5s;
         padding-top: 3px;
 
@@ -132,11 +133,11 @@ header {
     }
 
     &:hover &__text {
-        width: 200px;
+        width: 240px;
     }
 
     &:hover &__squeezer {
-        width: 300px;
+        width: 340px;
 
     }
 
@@ -182,6 +183,9 @@ header {
 }
 
 .order {
+    padding-top: 30px;
+    padding-bottom: 70px;
+
     button {
         display: flex;
         flex-direction: column;

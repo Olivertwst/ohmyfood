@@ -692,7 +692,6 @@ header .arrow i {
   border-top-right-radius: 25px;
   width: 100%;
   margin-top: -40px;
-  padding-right: 50px;
 }
 
 .logo-img {
@@ -736,6 +735,7 @@ header .arrow i {
 
 .menu-cards {
   width: 100%;
+  padding-left: 15px;
 }
 
 .menu-card {
@@ -749,17 +749,18 @@ header .arrow i {
   color: black;
   animation: fadeinup ease-in-out;
   transition: padding-right 1s ease-in-out;
-  width: 300px;
+  width: 340px;
   height: 63px;
   background-color: white;
+  display: block;
 }
 .menu-card__squeezer {
   display: flex;
-  width: 350px;
+  width: 390px;
   transition: width 0.5s;
 }
 .menu-card__text {
-  width: 250px;
+  width: 290px;
   transition: width 0.5s;
   padding-top: 3px;
 }
@@ -773,10 +774,10 @@ header .arrow i {
   padding-left: 10px;
 }
 .menu-card:hover .menu-card__text {
-  width: 200px;
+  width: 240px;
 }
 .menu-card:hover .menu-card__squeezer {
-  width: 300px;
+  width: 340px;
 }
 .menu-card:hover .menu-card__checkmark i {
   animation: rotate-checkmark 0.5s forwards;
@@ -809,6 +810,10 @@ header .arrow i {
   to {
     transform: rotate(360deg);
   }
+}
+.order {
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 .order button {
   display: flex;
