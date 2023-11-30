@@ -39,7 +39,7 @@ header {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     width: 100%;
-    top: -40px;
+    margin-top: -40px;
     padding-right: 50px;
 
 }
@@ -62,6 +62,7 @@ header {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    font-family: shrikhand, sans-serif;
 }
 
 .menu-course {
@@ -71,6 +72,8 @@ header {
     h2 {
         white-space: nowrap;
         padding: 0;
+        font-size: 18px;
+        font-weight: normal;
     }
 }
 
@@ -86,14 +89,13 @@ header {
 }
 
 .menu-cards {
-    // TODO
-
+    width: 100%;
 }
 
 .menu-card {
     border-radius: 15px;
     margin: 15px 10px 15px 10px;
-    box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
     // position: relative;
     text-decoration: none;
     text-overflow: ellipsis;
@@ -115,10 +117,17 @@ header {
     &__text {
         width: 250px;
         transition: width 0.5s;
+        padding-top: 3px;
+
+        h3 {
+            padding-left: 10px;
+        }
+
         p {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            padding-left: 10px;
         }
     }
 
@@ -131,14 +140,22 @@ header {
 
     }
 
+    &:hover &__checkmark i {
+        animation: rotate-checkmark 0.5s forwards;
+    }
+
 
     &__price {
         // TODO 
         width: 50px;
+        display: flex;
+        align-items: flex-end;
 
         em {
             font-weight: bold;
             font-style: normal;
+            padding-left: 10px;
+            padding-bottom: 5px;
         }
     }
 
@@ -153,7 +170,14 @@ header {
 
         i {
             color: white;
+            padding: 10px;
         }
+    }
+}
+
+@keyframes rotate-checkmark {
+    to {
+        transform: rotate(360deg);
     }
 }
 

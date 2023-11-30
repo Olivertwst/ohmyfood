@@ -430,6 +430,7 @@ main {
 main h2 {
   align-self: flex-start;
   padding-left: 20px;
+  padding-top: 30px;
 }
 
 header {
@@ -483,7 +484,7 @@ button {
   height: 50px;
   display: flex;
   border-style: none;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
   color: white;
@@ -501,11 +502,12 @@ button:hover {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .howto h2 {
   font-size: 23px;
-  padding: 15px 25px 15px 25px;
+  padding: 25px 25px 15px 25px;
   max-width: 375px;
   display: flex;
   justify-content: flex-start;
@@ -689,7 +691,7 @@ header .arrow i {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
-  top: -40px;
+  margin-top: -40px;
   padding-right: 50px;
 }
 
@@ -710,6 +712,7 @@ header .arrow i {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  font-family: shrikhand, sans-serif;
 }
 
 .menu-course {
@@ -719,6 +722,8 @@ header .arrow i {
 .menu-course h2 {
   white-space: nowrap;
   padding: 0;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .favorite {
@@ -729,10 +734,14 @@ header .arrow i {
   color: black;
 }
 
+.menu-cards {
+  width: 100%;
+}
+
 .menu-card {
   border-radius: 15px;
   margin: 15px 10px 15px 10px;
-  box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -752,11 +761,16 @@ header .arrow i {
 .menu-card__text {
   width: 250px;
   transition: width 0.5s;
+  padding-top: 3px;
+}
+.menu-card__text h3 {
+  padding-left: 10px;
 }
 .menu-card__text p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 10px;
 }
 .menu-card:hover .menu-card__text {
   width: 200px;
@@ -764,12 +778,19 @@ header .arrow i {
 .menu-card:hover .menu-card__squeezer {
   width: 300px;
 }
+.menu-card:hover .menu-card__checkmark i {
+  animation: rotate-checkmark 0.5s forwards;
+}
 .menu-card__price {
   width: 50px;
+  display: flex;
+  align-items: flex-end;
 }
 .menu-card__price em {
   font-weight: bold;
   font-style: normal;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
 .menu-card__checkmark {
   width: 50px;
@@ -781,8 +802,14 @@ header .arrow i {
 }
 .menu-card__checkmark i {
   color: white;
+  padding: 10px;
 }
 
+@keyframes rotate-checkmark {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .order button {
   display: flex;
   flex-direction: column;
@@ -819,9 +846,21 @@ footer {
 .footer-list a {
   color: #fff;
   text-decoration: none;
+  display: flex;
 }
 .footer-list .fa-utensils:before {
   display: flex;
+  justify-content: center;
+  padding: 0px 10px 0px 0px;
+}
+.footer-list .fa-handshake-angle:before {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 0px 0px;
+}
+.footer-list .tools {
+  display: flex;
+  justify-content: end;
 }
 
 /*# sourceMappingURL=main.css.map */
