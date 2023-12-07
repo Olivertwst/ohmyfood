@@ -446,12 +446,19 @@ header {
   justify-content: center;
   padding: 15px;
   font-size: 15px;
+  border-radius: 20px;
+  width: 100vw;
 }
 .location i {
   display: flex;
   align-items: flex-start;
   padding: 5px 15px 0 15px;
   flex-direction: row;
+}
+@media only screen and (min-width: 992px) {
+  .location {
+    border-radius: 15px;
+  }
 }
 
 .tagline {
@@ -461,6 +468,7 @@ header {
   padding: 35px 25px 35px 25px;
   align-items: center;
   background: #f5f5f5;
+  border-radius: 15px;
 }
 .tagline h1 {
   font-size: 23px;
@@ -723,6 +731,7 @@ header .arrow i {
   padding: 0;
   font-size: 18px;
   font-weight: normal;
+  color: rgba(114, 116, 114, 0.8588235294);
 }
 
 .favorite {
@@ -735,7 +744,8 @@ header .arrow i {
 
 .menu-cards {
   width: 100%;
-  padding-left: 15px;
+  padding-left: 25px;
+  display: flex;
 }
 
 .menu-card {
@@ -772,6 +782,7 @@ header .arrow i {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 10px;
+  color: rgba(114, 116, 114, 0.8588235294);
 }
 .menu-card:hover .menu-card__text {
   width: 240px;
@@ -821,6 +832,14 @@ header .arrow i {
   font-size: 15px;
 }
 
+@media (min-width: 962px) {
+  .food-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer {
   background-color: #353535;
   padding: 25px;
