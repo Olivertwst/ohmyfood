@@ -801,7 +801,7 @@ header .arrow i {
 .menu-card__price em {
   font-weight: bold;
   font-style: normal;
-  padding-left: 10px;
+  padding-left: 2px;
   padding-bottom: 5px;
 }
 .menu-card__checkmark {
@@ -832,12 +832,21 @@ header .arrow i {
   font-size: 15px;
 }
 
-@media (min-width: 962px) {
+@media (min-width: 992px) {
   .food-menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .order {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .order button {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
   }
 }
 footer {
