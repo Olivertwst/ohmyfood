@@ -105,12 +105,27 @@ header {
     white-space: nowrap;
     overflow: hidden;
     color: black;
-    animation: fadeinup ease-in-out;
     transition: padding-right 1s ease-in-out;
     width: 340px;
     height: 63px;
     background-color: white;
     display: block;
+
+    &--first {
+        animation: loading-menu-card 1s 0ms;
+    }
+
+    &--second {
+        animation: loading-menu-card 1s 50ms;
+    }
+
+    &--third {
+        animation: loading-menu-card 1s 100ms;
+    }
+
+    &--fourth {
+        animation: loading-menu-card 1s 150ms;
+    }
 
     &__squeezer {
         display: flex;
@@ -208,11 +223,23 @@ header {
     .order {
         padding-top: 100px;
         padding-bottom: 70px;
-    
+
         button {
             display: flex;
             flex-direction: column;
             font-size: 15px;
         }
+    }
+}
+
+@keyframes loading-menu-card {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

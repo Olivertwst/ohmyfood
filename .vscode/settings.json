@@ -1,3 +1,18 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "search-online.add-search-engine": [
+        {
+            "name": "firefox",
+            "url": "https://www.firefox.com/search?q=%SELECTION%"
+        },
+        {
+            "name": "Firefox",
+            "url": "https"
+        },
+        {
+            "name": "Duck",
+            "url": "https://duckduckgo.com/?q=%SELECTION%"
+        }
+    ],
+    "search-online.search-engine": "Google"
 }
